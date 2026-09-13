@@ -1,0 +1,278 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #333;
+}
+
+
+/* Navigation */
+
+nav {
+    background: #4b4ded;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffe082;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 8%;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    max-width: 1000px;
+}
+/* Photo */
+.photo-box {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid white;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Home Text */
+
+.home-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #4b4ded;
+}
+
+.home-content h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.home-content p {
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+
+/* Button */
+
+button {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #4b4ded;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3030b8;
+}
+
+
+/* Sections */
+
+section {
+    padding: 70px 8%;
+    min-height: 50vh;
+}
+
+.section-title {
+    text-align: center;
+    color: #4b4ded;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* Cards */
+
+.card,
+.education-card,
+.goal-card,
+.strength-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hobbies */
+
+.card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #4b4ded;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 8px 0;
+}
+
+
+/* Education */
+
+.education-card {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.education-card h3 {
+    color: #4b4ded;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    margin: 8px 0;
+}
+
+
+/* Strength */
+
+.strength-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.strength-card h3 {
+    color: #4b4ded;
+    margin-bottom: 10px;
+}
+
+
+/* Goal */
+
+.goal-card {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #4b4ded;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .strength-container {
+        grid-template-columns: 1fr;
+    }
+
+}
